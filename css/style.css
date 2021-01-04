@@ -1,3 +1,366 @@
-body {
-    margin: 0;
+
+body{
+  font-family: 'Arvo', serif; 
+  margin: 0;
+  padding: 0;
+  color: black;
+  overflow-x: hidden;
 }
+.dark-mode {
+background-color: rgb(0, 0, 0);
+color: #df8600;
+transition-duration: 1s;
+overflow-X: hidden;
+}
+.navbar {
+  text-align: center;
+  position: sticky;
+  width: 100%;
+  position: fixed;
+  display: block;
+  background-color: rgb(255, 255, 255);
+  height: 69px;
+  
+  
+}
+.navbar ul{
+  margin-top: 25px;
+  font-size: 18px;
+  margin-bottom: 20px;
+  margin-left: 105px;
+
+  
+}
+.navbar ul li:nth-child(1){
+background-color: #df8600;
+color: antiquewhite;
+}
+
+.navbar ul li{
+  text-decoration: none;
+  display: inline;
+  padding: 13px 5px;
+  text-align: center;
+  border-bottom: 1px solid rgb(182, 119, 1);
+  margin: 10px;
+}
+.navbar ul li a {
+text-decoration: none;
+color:#000000 ;
+padding: 15px 35px;
+}
+.navbar ul li:hover{
+  background-color: #14809b;
+  color: rgb(0, 0, 0);
+  font-size: 19px;
+}
+.navbar ul  a:hover{
+color: #fff;
+text-decoration-color: #ddd;
+
+}
+.dropdown {
+float: left;
+overflow: hidden;
+float: right;
+margin-bottom: 0;
+
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+margin-left: 80px;
+margin-bottom: 0px;
+font-size: 16px;
+border: 0px solid black;
+outline: none;
+color: rgb(0, 0, 0);
+padding: 6px 12px;
+background-color: inherit;
+font-family: inherit; /* Important for vertical align on mobile phones */
+}
+
+
+.dropdown-content {
+color:rgb(0, 0, 0);
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+float: none;
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+background-color: rgb(32, 110, 129);
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+display: block;
+}
+.foto1{
+width: 35px;
+height: 35px;
+}
+.main {
+background-image: url('../images/BG2.jpg');
+height: 760px;
+}
+.head4{
+position: absolute;
+padding: 15px 30px;
+width: 300px;
+height: 34px;
+font-size: 22px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+text-align: center;
+font-weight: lighter;
+border: 1px solid black;
+margin-right: 400px;
+margin-top: 646px;
+background-color: rgba(1, 1, 1, 0.178);
+border-radius: 30px;
+text-decoration: none;
+color:#fff;
+margin-left: 480px;
+
+}
+
+.main a:hover{
+background-color: rgba(253, 253, 253, 0.973);
+color: #df8600;
+font-size: 25px;
+font-weight: 450;
+width: 340px;
+transform:translateY(5px);
+transition-duration : 0.5s;
+}
+.cards {
+width: 100%;
+display: flex;
+margin-top: 40px;
+
+}
+.cards h4{
+position: absolute;
+text-align: center;
+margin-left: 530px;
+margin-top: 25px;
+border-bottom: 1px solid rgb(182, 119, 1);
+padding: 10px 20px;
+font-size: 18px;
+text-transform: uppercase;
+}
+.cards h4:hover{
+border-bottom: 2px solid  rgb(182, 119, 1) ;
+transition-duration: 0.3s;
+}
+
+.cards p{
+font-size: 18px;
+}
+
+.card1{
+float: left;
+margin-left: 106px;
+margin-top: 135px;
+width: 25%;
+height: 600px;
+border: 1px solid #000000;
+border-bottom: 2px solid rgb(182, 119, 1)!important;
+margin-right: 30px;
+padding-left: 10px;
+border: 1px solid #df8600;
+
+
+}
+.card1:hover{
+border: 2px solid rgb(6, 54, 99);
+transition-duration: 0.5s;
+transform: rotate(0.006turn);
+margin-top: 110px;
+
+}
+.card1 img{
+max-width: 100%;
+height: 200px;
+
+}
+.card1 h3{
+font-weight: 390;
+color: #006a85;
+}
+.card1 h3:hover{
+text-transform: uppercase;
+color: #06404e;
+}
+.card1 a{
+float: right;
+text-decoration: none;
+color: rgb(13, 82, 122);
+font-size: 19px;
+padding-right: 10px;
+}
+.card1 a:hover{
+color: rgb(182, 119, 1);
+font-size: 21px;
+}
+
+.card2{
+float: left;
+margin-left: 15px;
+margin-top: 135px;
+width: 25%;
+height: 600px;
+border: 1px solid #000000;
+border-bottom: 2px solid rgb(182, 119, 1)!important;
+margin-right: 30px;
+padding-left: 10px;
+border: 1px solid #df8600;
+
+}
+.card2:hover{
+border: 2px solid rgb(6, 54, 99);
+transition-duration: 0.5s;
+transform: rotate(0.006turn);
+margin-top: 110px;
+}
+.card2 img{
+
+max-width: 95%;
+height: 200px;
+margin-right: 10px!important;
+padding-right: 10px;
+}
+.card2 h3{
+font-weight: 390;
+color: #006a85;
+}
+.card2 h3:hover{
+text-transform: uppercase;
+color: #06404e;
+}
+.card2 a{
+float: right;
+text-decoration: none;
+color: rgb(13, 82, 122);
+font-size: 19px;
+padding-right: 10px;
+}
+.card2 a:hover{
+color: rgb(182, 119, 1);
+font-size: 21px;
+}
+
+.card3{
+float: left;
+margin-left: 15px;
+margin-top: 135px;
+width: 25%;
+height: 600px;
+border: 1px solid #000000;
+border-bottom: 2px solid rgb(182, 119, 1)!important;
+padding-left: 10px;
+border: 1px solid #df8600;
+}
+.card3:hover{
+border: 2px solid rgb(6, 54, 99);
+transition-duration: 0.5s;
+transform: rotate(0.006turn);
+margin-top: 110px;
+}
+.card3 img{
+
+max-width: 100%;
+height: 200px;
+}
+.card3 h3{
+font-weight: 390;
+color: #006a85;
+}
+.card3 h3:hover{
+text-transform: uppercase;
+color: #06404e;
+}
+.card3 a{
+float: right;
+text-decoration: none;
+color: rgb(13, 82, 122);
+font-size: 19px;
+padding-right: 10px;
+}
+.card3 a:hover{
+color: rgb(182, 119, 1);
+font-size: 21px;
+}
+
+.footer {
+  position: absolute;
+  margin-top: 100px;
+  margin-bottom: 0;
+  width: 100%;
+  height: 190px;
+  background: #02050c;
+ text-align: center;
+}
+.up{
+color: #fff;
+position: absolute;
+text-decoration: none;
+margin-top: 50px;
+margin-left: 425px;
+border: 1px solid white;
+padding: 15px 20px;
+border-radius: 65%;
+text-align: center;
+}
+.up:hover{
+color: #df8600;
+border: 2px solid #df8600;
+
+}
+
+.footer h3 {
+  padding-top: 20px;
+  color: #fff;
+  font-weight: lighter;
+  text-align: center;
+  margin-left: 50PX;
+}
+
+.footer h3 a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.footer button{
+color: #fcfcfc;
+background-color: #000000;
+margin-top: 60px;
+font-size: 16px;
+float:left;
+padding: 10px 10px;
+
+margin-bottom:150px!important;
+margin-left: 15px;
+}
+.footer button:hover{
+color: #000000;
+background-color:#fff;
+
+}
+.head1{
+color: #fff;
+}
+
