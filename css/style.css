@@ -75,7 +75,7 @@ font-size: 16px;
 border: 0px solid black;
 outline: none;
 color: rgb(0, 0, 0);
-padding: 6px 12px;
+padding: 0px 12px;
 background-color: inherit;
 font-family: inherit; /* Important for vertical align on mobile phones */
 }
