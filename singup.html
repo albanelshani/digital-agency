@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/loginstyle.css">
+    <link rel="stylesheet" href="css/singupstyle.css">
     <title>SingUp</title>
 </head>
 <body>
@@ -17,21 +17,30 @@
     <div class='content'>
       <div class='welcome'>Hello There!</div><br><br><br>
       <div class='subtitle'>We're almost done. Before using our services you need to create an account.</div>
+      <form onsubmit ="return verify()" id="form" action="index.html" autocomplete="off">
       <div class='input-fields'>
-        <input type="text" placeholder='Name' class='input-line full-width' ></input>
-        <input type="text" placeholder='Surename' class='input-line full-width' ></input>
-        <input type='text' placeholder='Username' class='input-line full-width'></input>
-        <input type='email'  placeholder='Email' required class='input-line full-width'></input>
-        <input type='password' placeholder='Password' class='input-line full-width'></input>
+
+        <input id="name" name="name" type="text" placeholder='Name' class='input-line full-width' autocomplete="off"  ></input>
+        <input id="surename" type="text" placeholder='Surename' class='input-line full-width' ></input>
+        <input  id="username" type='text' placeholder='Username' class='input-line full-width'></input>
+        <input id="email" name="email" type='email'   placeholder='Email'  class='input-line full-width'></input>
+        <input id="password" name="password" type='password' placeholder='Password' class='input-line full-width'></input>
+        <input id="password2" name="password" type='password' placeholder='Password' class='input-line full-width'></input>
 
       </div>
-      <div class='spacing'>or continue with <span class='highlight'>Facebook</span></div>
+    </br>
+      <span id = "message" style="color:rgb(255, 0, 0)"> </span> <br>
+      <br>  
+      
+      <div class='spacing'>If you have account just <a href="singin.html">Log-In</a></div>
       <div>
-          <button class='ghost-round full-width'>Create Account</button>
+          <input type="submit" class='ghost-round full-width'>
         </div>
+        </form>
     </div>
-  </div>
-</div>
-    
+
+
+<script src="js/javascript.js"></script>
+
 </body>
 </html>

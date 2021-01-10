@@ -46,10 +46,9 @@ button:focus {
   color: rgb(255, 255, 255)
 }
 .spacing a{
-  text-decoration: none;
-  color: red;
+    text-decoration: none;
+    color: red;
 }
-
 .input-line:focus {
   outline: none;
   border-color: #fff;
@@ -129,7 +128,6 @@ background: linear-gradient(to right, #19547b, #e0ac57); /* W3C, IE 10+/ Edge, F
 }
 
 .content {
-  height: 100%;
   padding-left: 25px;
   padding-right: 25px;
   display: -webkit-box;
@@ -171,6 +169,7 @@ background: linear-gradient(to right, #19547b, #e0ac57);
 }
 
 .window {
+ margin-bottom: 137px;
   z-index: 100;
   color: #fff;
   font-family: roboto;
