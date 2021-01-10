@@ -4,7 +4,7 @@ body{
   margin: 0;
   padding: 0;
   color: black;
-  overflow-x: hidden;
+  
 }
 .dark-mode {
 background-color: rgb(0, 0, 0);
@@ -13,6 +13,7 @@ transition-duration: 1s;
 overflow-X: hidden;
 }
 .navbar {
+  width: auto;
   text-align: center;
   position: sticky;
   width: 100%;
@@ -24,6 +25,7 @@ overflow-X: hidden;
   
 }
 .navbar ul{
+  width: auto;
   margin-top: 25px;
   font-size: 18px;
   margin-bottom: 20px;
@@ -37,6 +39,7 @@ color: antiquewhite;
 }
 
 .navbar ul li{
+  width: auto;
   text-decoration: none;
   display: inline;
   padding: 13px 5px;
@@ -52,7 +55,7 @@ padding: 15px 35px;
 .navbar ul li:hover{
   background-color: #14809b;
   color: rgb(0, 0, 0);
-  font-size: 19px;
+ 
 }
 .navbar ul  a:hover{
 color: #fff;
@@ -117,6 +120,8 @@ height: 35px;
 .main {
 background-image: url('../images/BG2.jpg');
 height: 760px;
+width: 100%;
+background-repeat: no-repeat;
 }
 .head4{
 position: absolute;
@@ -151,9 +156,11 @@ transition-duration : 0.5s;
 width: 100%;
 display: flex;
 margin-top: 40px;
+margin-bottom: 100px;
 
 }
 .cards h4{
+  color: #06404e;
 position: absolute;
 text-align: center;
 margin-left: 530px;
@@ -307,9 +314,9 @@ font-size: 21px;
 }
 
 .footer {
-  position: absolute;
-  margin-top: 100px;
-  margin-bottom: 0;
+  position:absolute;
+  margin-top:650px;
+  margin-bottom: 1px;
   width: 100%;
   height: 190px;
   background: #02050c;
@@ -331,7 +338,28 @@ color: #df8600;
 border: 2px solid #df8600;
 
 }
+.loc{
+color: #06404e;
+position: absolute;
+text-align: center;
+margin-left: 530px;
+margin-top: 25px;
+border-bottom: 1px solid rgb(182, 119, 1);
+padding: 10px 20px;
+font-size: 18px;
+text-transform: uppercase;
 
+}
+.location{
+  margin-top: 100px;
+  margin-left: 35px;
+  width: 40%;
+  height: 250px;
+  border: 1px solid rgb(62, 62, 252);
+  padding: 0px 20px;
+  font-size: 20px;
+  color: #312c2c;
+}
 .footer h3 {
   padding-top: 20px;
   color: #fff;
@@ -363,4 +391,72 @@ background-color:#fff;
 .head1{
 color: #fff;
 }
+iframe{
+  float: right;
+}
 
+@media (max-width:375px) {
+  *{
+    overflow-x: hidden;
+  
+  }
+   .navbar{
+     max-width: 375px;
+     height: 65px;
+     margin-bottom:150px ;
+   }
+   .navbar ul{
+     margin-left: 35px;
+     margin-top: 10px;
+     text-align: center;
+   }
+   .navbar ul li:nth-child(2){
+     display: none;
+   }
+   .navbar ul li:nth-child(5){
+     display: none;
+   }
+   .navbar ul li:nth-child(2){
+     display: none;
+   }
+   .navbar ul li:nth-child(2){
+     display: none;
+   }
+   .navbar ul li:nth-child(){
+     display: none;
+   }
+   .navbar ul li{
+     float: left;
+     margin-left: 0%;
+     width: 65px;
+     font-size: 14px;
+     margin-top: 0;
+     text-align: center;
+   }
+   .navbar ul li a {
+     text-decoration: none;
+     color: #000000;
+     padding: 16px 12px;
+ }
+   .body{
+     max-width: 375px!important;
+     overflow-y: hidden;
+   }
+   .head4{
+     margin-left: 100px;
+     font-size: 15px;
+     height: 20px;
+     width: 129px;
+   }
+   .cards h4{
+     margin-left: 122px;
+   }
+   .cards{
+     overflow-x: hidden;
+   }
+   .dropdown{
+     display: none;
+   }
+ 
+ 
+}
