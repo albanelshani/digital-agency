@@ -1,0 +1,100 @@
+*{
+ 
+    color: rgb(0, 0, 0);
+    
+}
+body{
+    height: 1000px;
+    font-family: 'Sriracha', cursive;
+}
+#cards{
+    display: inline-flex;
+    height: 450px;
+    width: 350px;
+    margin: 10px;
+    margin-top: 100px;
+}
+#cards img{
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    margin-left: 10px;
+    padding-left: 20px;
+    display: block;
+}
+.card1{
+    margin-left: 70px!important;
+    
+}
+
+.headtitle{
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-left: 43%;
+    margin-top: 50px;
+    font-size: 35px;
+    color: blue;
+}
+.p1{
+    margin-left: 22%;
+    font-size: large;
+
+}
+.headers{
+    position: absolute;
+    margin-top: 25%;
+    margin-left: 80px;
+    font-size: 22px;
+    font-weight: 200;
+}
+.card1 .sp{
+    margin-left: 50px;
+}
+.sp{
+    margin-left: 15px;
+    font-size: 20px;
+    font-weight: 100;
+    color: rgb(55, 55, 202);
+}
+.sp1{
+    width: 260px;
+    color: rgb(0, 42, 90);
+    position: absolute;
+    margin-top: 30%;
+    margin-left: 60px;
+    font-size: 20px;
+    font-weight: 100;
+}
+#icons {
+    margin-top: 110px;
+    margin-left: 155px;
+    display: inline-flex;
+}
+#icons .icon1  {
+    margin-top: 35px;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+}
+#icons .icon2{
+    margin-left: 50px;
+    height: 40px;
+    margin-top: 35px;
+    width:40px;
+}
+#icons .icon3{
+    margin-left: 10px;
+    height: 40px;
+    margin-top: 35px;
+    width:40px;
+
+}
+#icons .icon4   {
+    margin-left: 10px;
+    height: 40px;
+    margin-top: 35px;
+    width:40px;
+}
+#icon4ta{
+    margin-right: 35px;
+}
