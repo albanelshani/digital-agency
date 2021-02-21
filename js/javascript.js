@@ -13,6 +13,7 @@ function verify() {
   var sn =document.getElementById("surename").value;
   var em= document.getElementById("email").value;
 
+ 
   
   if (na.length == 0 || na.length > 200)
   {document.getElementById("message").innerHTML = "**Name cannot by blank";  
@@ -66,3 +67,8 @@ function verify() {
 } 
 
 
+
+function showNavbar() {
+    var element = document.getElementById("links");
+    element.classList.toggle("show");
+ }

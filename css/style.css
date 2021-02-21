@@ -1,4 +1,6 @@
-
+html{
+  overflow-x: hidden!important;
+}
 body{
   font-family: 'Arvo', serif; 
   margin: 0;
@@ -12,17 +14,26 @@ color: #df8600;
 transition-duration: 1s;
 overflow-X: hidden;
 }
+
+.show{
+  display: block!important;
+  z-index: 1000!important;
+}
+
+.showNavBtn{
+  display: none;
+}
 .navbar {
   width: auto;
   text-align: center;
-  position: sticky;
   width: 100%;
   position: fixed;
+  top: 0;
+  left: 0;
   display: block;
   background-color: rgb(255, 255, 255);
-  height: 69px;
-  
-  
+  height: 30px!important;
+
 }
 .navbar ul{
   width: auto;
@@ -72,19 +83,24 @@ margin-bottom: 0;
 
 /* Dropdown button */
 .dropdown .dropbtn {
-margin-left: 80px;
-margin-bottom: 0px;
+position: absolute;
+right: 20px;
+top: 20px;
 font-size: 16px;
 border: 0px solid black;
 outline: none;
 color: rgb(0, 0, 0);
-padding: 0px 12px;
 background-color: inherit;
 font-family: inherit; /* Important for vertical align on mobile phones */
+z-index: 1000!important;
 }
 
 
+
 .dropdown-content {
+  position: relative;
+  top: 63px;
+  right: 20px;
 color:rgb(0, 0, 0);
 display: none;
 position: absolute;
@@ -92,6 +108,10 @@ background-color: #f9f9f9;
 min-width: 160px;
 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 z-index: 1;
+}
+
+.dropdown .dropbtn:hover .dropdown-content{
+  display: block!important;
 }
 
 /* Links inside the dropdown */
@@ -111,7 +131,8 @@ background-color: rgb(32, 110, 129);
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
-display: block;
+display: block!important;
+position: absolute;
 }
 .foto1{
 width: 35px;
@@ -120,26 +141,28 @@ height: 35px;
 .main {
 background-image: url('../images/BG2.jpg');
 height: 760px;
-width: 100%;
+max-width: 100%;
 background-repeat: no-repeat;
+display: block;
+margin-top:86px!important;
 }
 .head4{
 position: absolute;
 padding: 15px 30px;
-width: 300px;
+width: 35%;
 height: 34px;
-font-size: 22px;
+font-size: 19px;
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 text-align: center;
 font-weight: lighter;
 border: 1px solid black;
-margin-right: 400px;
+margin-right: 50%;
 margin-top: 646px;
 background-color: rgba(1, 1, 1, 0.178);
 border-radius: 30px;
 text-decoration: none;
 color:#fff;
-margin-left: 480px;
+margin-left: 35%;
 
 }
 
@@ -155,15 +178,18 @@ transition-duration : 0.5s;
 .cards {
 width: 100%;
 display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
 margin-top: 40px;
 margin-bottom: 100px;
+margin-left: 5%;
 
 }
 .cards h4{
-  color: #06404e;
+color: #06404e;
 position: absolute;
 text-align: center;
-margin-left: 530px;
+margin-left: 0 auto;
 margin-top: 25px;
 border-bottom: 1px solid rgb(182, 119, 1);
 padding: 10px 20px;
@@ -179,11 +205,9 @@ transition-duration: 0.3s;
 font-size: 18px;
 }
 
-.card1{
-float: left;
-margin-left: 106px;
+.card{
 margin-top: 135px;
-width: 25%;
+width: 350px;
 height: 600px;
 border: 1px solid #000000;
 border-bottom: 2px solid rgb(182, 119, 1)!important;
@@ -193,137 +217,53 @@ border: 1px solid #df8600;
 
 
 }
-.card1:hover{
+.card:hover{
 border: 2px solid rgb(6, 54, 99);
 transition-duration: 0.5s;
 transform: rotate(0.006turn);
 margin-top: 110px;
 
 }
-.card1 img{
+.card img{
 max-width: 100%;
 height: 200px;
 
 }
-.card1 h3{
-font-weight: 390;
+.card h3{
+  text-transform: uppercase;
+font-weight: 530;
 color: #006a85;
+font-size: 17px;
 }
-.card1 h3:hover{
+.card h3:hover{
 text-transform: uppercase;
 color: #06404e;
 }
-.card1 a{
+.card a{
 float: right;
 text-decoration: none;
 color: rgb(13, 82, 122);
 font-size: 19px;
 padding-right: 10px;
 }
-.card1 a:hover{
+.card a:hover{
 color: rgb(182, 119, 1);
 font-size: 21px;
 }
 
-.card2{
-float: left;
-margin-left: 15px;
-margin-top: 135px;
-width: 25%;
-height: 600px;
-border: 1px solid #000000;
-border-bottom: 2px solid rgb(182, 119, 1)!important;
-margin-right: 30px;
-padding-left: 10px;
-border: 1px solid #df8600;
-
-}
-.card2:hover{
-border: 2px solid rgb(6, 54, 99);
-transition-duration: 0.5s;
-transform: rotate(0.006turn);
-margin-top: 110px;
-}
-.card2 img{
-
-max-width: 95%;
-height: 200px;
-margin-right: 10px!important;
-padding-right: 10px;
-}
-.card2 h3{
-font-weight: 390;
-color: #006a85;
-}
-.card2 h3:hover{
-text-transform: uppercase;
-color: #06404e;
-}
-.card2 a{
-float: right;
-text-decoration: none;
-color: rgb(13, 82, 122);
-font-size: 19px;
-padding-right: 10px;
-}
-.card2 a:hover{
-color: rgb(182, 119, 1);
-font-size: 21px;
-}
-
-.card3{
-float: left;
-margin-left: 15px;
-margin-top: 135px;
-width: 25%;
-height: 600px;
-border: 1px solid #000000;
-border-bottom: 2px solid rgb(182, 119, 1)!important;
-padding-left: 10px;
-border: 1px solid #df8600;
-}
-.card3:hover{
-border: 2px solid rgb(6, 54, 99);
-transition-duration: 0.5s;
-transform: rotate(0.006turn);
-margin-top: 110px;
-}
-.card3 img{
-
-max-width: 100%;
-height: 200px;
-}
-.card3 h3{
-font-weight: 390;
-color: #006a85;
-}
-.card3 h3:hover{
-text-transform: uppercase;
-color: #06404e;
-}
-.card3 a{
-float: right;
-text-decoration: none;
-color: rgb(13, 82, 122);
-font-size: 19px;
-padding-right: 10px;
-}
-.card3 a:hover{
-color: rgb(182, 119, 1);
-font-size: 21px;
-}
 
 .footer {
   position:absolute;
   margin-top:650px;
-  margin-bottom: 1px;
+  margin-bottom: 0px;
   width: 100%;
-  height: 190px;
-  background: #02050c;
+  height: 300px;
+  background-color:rgba(388, 213, 70, 0.74)!important;
  text-align: center;
+ 
 }
 .up{
-color: #fff;
+color: rgb(255, 255, 255);
 position: absolute;
 text-decoration: none;
 margin-top: 50px;
@@ -341,9 +281,10 @@ border: 2px solid #df8600;
 .loc{
 color: #06404e;
 position: absolute;
+left: 50%;
+transform: translateX(-50%);
 text-align: center;
-margin-left: 530px;
-margin-top: 25px;
+margin-top: 40px;
 border-bottom: 1px solid rgb(182, 119, 1);
 padding: 10px 20px;
 font-size: 18px;
@@ -355,17 +296,21 @@ text-transform: uppercase;
   margin-left: 35px;
   width: 40%;
   height: 250px;
-  border: 1px solid rgb(62, 62, 252);
+  border-bottom: 2px solid rgb(182, 119, 1);
   padding: 0px 20px;
   font-size: 20px;
   color: #312c2c;
 }
 .footer h3 {
   padding-top: 20px;
-  color: #fff;
+  color: rgb(255, 255, 255);
   font-weight: lighter;
   text-align: center;
-  margin-left: 50PX;
+  margin-left: 75PX;
+  font-size: 24px;
+  margin-bottom: 10px;
+  margin-top: 70px;
+  
 }
 
 .footer h3 a {
@@ -373,14 +318,14 @@ text-transform: uppercase;
   color: rgb(255, 255, 255);
 }
 .footer button{
-color: #fcfcfc;
-background-color: #000000;
-margin-top: 60px;
+color: #000000;
+background-color: #ffffff;
+margin-top: 130px;
 font-size: 16px;
 float:left;
 padding: 10px 10px;
 
-margin-bottom:150px!important;
+margin-bottom:10px!important;
 margin-left: 15px;
 }
 .footer button:hover{
@@ -388,17 +333,66 @@ color: #000000;
 background-color:#fff;
 
 }
+.head7{
+  margin-top: 0;
+  color: #000000!important;
+  
+}
 .head1{
-color: #fff;
+color: rgb(0, 0, 0);
+margin-top: 60px;
+}
+.head1 span{
+  color: #000000;
+  font-size: 20px;
 }
 iframe{
   float: right;
 }
 
+@media (max-width:1150px) {
+   .navbar ul{
+     width: 100%;
+     display: none;     
+     background-color: #ddd;
+     /* position: absolute!important;
+     top: 0;
+     left: 0;
+     width: 100%;
+     z-index: 10000!important; */
+   }
+
+   .navbar ul li{
+     display: block;
+   }
+
+   .showNavBtn{
+     display: block;
+     margin: 0 auto;
+   }
+   .location{
+    width: 100%;
+    clear: both;
+    position: relative;
+    overflow: hidden;
+  }
+  iframe{
+    width: 100%;
+    padding: 0 0;
+  }
+}
+
 @media (max-width:375px) {
   *{
-    overflow-x: hidden;
+    overflow-x: hidden!important;
+    overflow-y: hidden!important;
   
+  }
+  .main{
+    overflow: hidden;
+  }
+  .location{
+    overflow: hidden;
   }
    .navbar{
      max-width: 375px;

@@ -18,17 +18,17 @@
       <div class='welcome'>Hello There!</div><br><br><br>
       <div class='subtitle'>We're almost done.Please Log-In.</div>
 
-      <form  onsubmit="return verify()" action="index.html" autocomplete="off">
+      <form  onsubmit="return verify()" action="loginconnect.php" method="POST" autocomplete="off">
       <div class='input-fields'>
         
         <input id="username" name="username" type='text' placeholder='Username' class='input-line full-width'></input>
-        <input id="email" type='email'  placeholder='Email'  class='input-line full-width'></input>
+        <input id="email" name="email" type='email'  placeholder='Email'  class='input-line full-width'></input>
         <input id ="password" name="password" type='password' placeholder='Password' re class='input-line full-width'></input>
 
       </div>
       <span id = "message" style="color:rgb(255, 0, 0)"> </span> <br>
       
-      <div class='spacing'>If you don't have account please <a href="singup.html">Sing-Up</a></div>
+      <div class='spacing'>If you don't have account please <a href="singup.php">Sing-Up</a></div>
       <div>
           <input  type="submit" class='ghost-round full-width' >
         </form>
