@@ -8,7 +8,7 @@ function myFunction() {
 function verify() {  
   var pw = document.getElementById("password").value;  
   var us =document.getElementById("username").value;  
-  var pw2 =document.getElementById("password2").value;
+  var pw2 =document.getElementById("confirmPassword").value;
   var na =document.getElementById("name").value;
   var sn =document.getElementById("surename").value;
   var em= document.getElementById("email").value;
