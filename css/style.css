@@ -264,11 +264,10 @@ font-size: 21px;
  
 }
 .up{
-color: rgb(255, 255, 255);
-position: absolute;
+color: rgb(255, 255, 255);  
 text-decoration: none;
-margin-top: 50px;
-margin-left: 425px;
+margin-top: 0px;
+margin-left: 20%;
 border: 1px solid white;
 padding: 15px 20px;
 border-radius: 65%;

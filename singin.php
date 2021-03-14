@@ -1,3 +1,41 @@
+<?php
+
+session_start();
+
+if( isset($_SESSION['user_id']) ){
+    header("Location: index.php");
+}
+
+require 'includes/dbconnect.php';
+
+
+if(isset($_POST['submit'])):
+
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+    $message = '';
+
+    $query = $pdo->prepare('SELECT id,userName,email,password FROM form WHERE email = :email');
+    $query->bindParam(':email', $email);
+    $query->execute();
+
+    $user = $query->fetch();
+
+    if(count($user) > 0 && password_verify($password, $user['password']) ){
+
+        $_SESSION['user_id'] = $user['id'];
+        $_SESSION['userName'] = $user['userName'];
+
+        header("Location: index.php");
+
+    } else {
+        $message = 'Sorry, those credentials do not match';
+    }
+
+endif;
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,7 +56,7 @@
       <div class='welcome'>Hello There!</div><br><br><br>
       <div class='subtitle'>We're almost done.Please Log-In.</div>
 
-      <form  onsubmit="return verify()" action="loginconnect.php" method="POST" autocomplete="off">
+      <form  onsubmit="return verify()" action="singin.php" method="POST" autocomplete="off">
       <div class='input-fields'>
         
         <input id="username" name="username" type='text' placeholder='Username' class='input-line full-width'></input>
